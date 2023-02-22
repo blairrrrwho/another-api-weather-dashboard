@@ -1,22 +1,6 @@
-# The Notorious Weather Forecast App
-User Story
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-
-Acceptance Criteria
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the the wind speed
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
+# <Your-Project-Title>
 
 ## Description
-Weather App based on the OpenWeather API -- Tracks the weather for the current date (day and week) based on the city input.
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
@@ -53,9 +37,6 @@ Live URL: <a href="deployed link">Deployment Link</a>
 
 ## Credits
 
-OpenWeather API Website: https://openweathermap.org/forecast5
-Bootstrap: https://getbootstrap.com/docs/5.2/getting-started/introduction/
-
 List your collaborators, if any, with links to their GitHub profiles.
 
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
@@ -64,14 +45,22 @@ If you followed tutorials, include links to those here as well.
 
 ## License
 
+The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+
+
 [![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This project is licensed under the MIT license. For more information about this license and what it entails visit: https://opensource.org/licenses/MIT
+
+
+
 ---
 
 🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
 
 ## Badges
+
+![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
 Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 
