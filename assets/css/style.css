@@ -3,3 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+li {
+list-style-type: none;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    right:0;
+    left:0;
+}
