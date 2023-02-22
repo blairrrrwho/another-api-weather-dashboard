@@ -9,3 +9,18 @@ searchBtn.addEventListener("click", function (event) {
     getWeather(city)
     localStorage.setItem("city", JSON.stringify(city))
 })
+
+function getWeather(city) {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=` + city + `&appid=` + apiKey + `&units=imperial`)
+        .then((res) => {
+            return res.json()
+        })
+        .then((data) => {
+            console.log(data)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=` + city + `&appid=` + apiKey + `&units=imperial`)
+        .then((res) => {
+            return res.json()
+        })
+        .then((data) => {
+            console.log(data)
+        })
