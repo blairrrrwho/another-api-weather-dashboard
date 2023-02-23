@@ -16,11 +16,10 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 
 ## Description
-This is a weather forecast application based on the OpenWeather API -- Tracks the weather for the current date as well as the next five days, based on the city inputted by the user. 
+This is a weather forecast application based on the OpenWeather API -- 
+It's an easy and simple to use tool that can be used to look up the most up to date and need-to-know weather information for any given day and upcoming week based on the city.
 
-This is a easy and simple to use tool used to lookup the most common and need-to-know weather information for any given day and upcoming week based on the city.
-
-This applicaiton uses the Open Weather API to make certain calls that allow it to generate the most recent and to date weather information.
+Using Bootstrap framework, Jquery, and the Open weather API the user can search for a city and get the current and future weather conditions which include the respective date(s), temperature, humidity, wind speed and UVIndex for each city. The forecast will also display corresponding weather icons. Local storage will store data for previously search cities and add them to a list which can be clicked to reload city search.
 
 ## Table of Contents (Optional)
 
@@ -28,6 +27,7 @@ This applicaiton uses the Open Weather API to make certain calls that allow it t
 - [Installation](#installation)
 - [Usage](#usage)
 - [Deployment](#deployment)
+- [Technologies](#technologies)
 - [Credits](#credits)
 - [License](#license)
 - [Tests](#tests)
@@ -55,6 +55,14 @@ Live URL: <a href="deployed link">Deployment Link</a>
 
 <!-- in the parentheses is just the relative path to the screenshot-->
 ![alt text](assets/images/screenshot.png)
+
+## Technologies
+HTML, CSS, JavaScript, Bootstrap, API calls
+
+Weather Data Api: https://openweathermap.org/
+
+Geological Api: https://openweathermap.org/
+
 
 ## Credits
 
