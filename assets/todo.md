@@ -1,4 +1,3 @@
-- save search history to local storage
 - get items from local storage and have them become buttons in the search history side bar; clickable
 - have the page preload to something so it's not blank
 - UV index??

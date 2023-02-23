@@ -51,7 +51,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 
 ## Deployment
-Live URL: <a href="deployed link">Deployment Link</a>
+Live URL: <a href="https://blairrrrwho.github.io/weather-dashboard-api-app/">Weather Dashboard API Application</a>
 
 <!-- in the parentheses is just the relative path to the screenshot-->
 ![alt text](assets/images/screenshot.png)
