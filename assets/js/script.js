@@ -8,8 +8,7 @@ const humidity = document.querySelector("#main-card-humidity");
 const date = document.querySelector(".date");
 let city = "";
 const searchList = document.querySelector("#results-div");
-// const historyBtn = document.querySelector("#historyBtn");
-// const recentBtn = document.querySelector("#recentBtn")
+
 
 
 // Main even that calls the big function that searches for the city and brings back the weather data
@@ -82,15 +81,15 @@ searchBtn.addEventListener("click", function (event) {
 
                             // Create elements for the weather data (three li's)
                             // Link them by their element's ID, write them and append them to the DOM
-                            const forcastTemp = document.createElement("li")
-                            forcastTemp.innerHTML = "Temp: " + Math.floor(data.list[index].main.temp) + ` &#176F`;
-                            forecastCards[i].append(forcastTemp)
-                            const forcastWind = document.createElement("li")
-                            forcastWind.innerHTML = "Wind: " + Math.floor(data.list[index].wind.speed) + ` mph`;
-                            forecastCards[i].append(forcastWind)
-                            const forcastHumidity = document.createElement("li")
-                            forcastHumidity.innerHTML = "Humidity: " + Math.floor(data.list[index].main.humidity) + `%`;
-                            forecastCards[i].append(forcastHumidity)
+                            const forecastTemp = document.createElement("li")
+                            forecastTemp.innerHTML = "Temp: " + Math.floor(data.list[index].main.temp) + ` &#176F`;
+                            forecastCards[i].append(forecastTemp)
+                            const forecastWind = document.createElement("li")
+                            forecastWind.innerHTML = "Wind: " + Math.floor(data.list[index].wind.speed) + ` mph`;
+                            forecastCards[i].append(forecastWind)
+                            const forecastHumidity = document.createElement("li")
+                            forecastHumidity.innerHTML = "Humidity: " + Math.floor(data.list[index].main.humidity) + `%`;
+                            forecastCards[i].append(forecastHumidity)
                         }
                     })
             })
