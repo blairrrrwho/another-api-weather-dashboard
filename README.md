@@ -1,4 +1,4 @@
-# The Notorious Weather Forecast App
+# Weather Dashboard API Application
 User Story
 AS A traveler
 I WANT to see the weather outlook for multiple cities
@@ -16,29 +16,34 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 
 ## Description
-Weather App based on the OpenWeather API -- Tracks the weather for the current date (day and week) based on the city input.
+This is a weather forecast application based on the OpenWeather API -- Tracks the weather for the current date as well as the next five days, based on the city inputted by the user. 
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This is a easy and simple to use tool used to lookup the most common and need-to-know weather information for any given day and upcoming week based on the city.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This applicaiton uses the Open Weather API to make certain calls that allow it to generate the most recent and to date weather information.
 
 ## Table of Contents (Optional)
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
+- [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Deployment](#deployment)
 - [Credits](#credits)
 - [License](#license)
+- [Tests](#tests)
+
+
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+No installation required -- this is a web-based application.
 
-## Usage
+## Usage - Instructions / How To Use
+
+Enter a city name in the search bar and click the Search button. By doing so, the application will generate the current weather for that city as well as a five-day forecast. 
+
+Your recent searches will be saved as a button in the search history side bar, and you can simply click on them to view a recent city search. 
+
 
 Provide instructions and examples for use. Include screenshots as needed.
 
@@ -67,22 +72,10 @@ If you followed tutorials, include links to those here as well.
 [![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This project is licensed under the MIT license. For more information about this license and what it entails visit: https://opensource.org/licenses/MIT
----
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+There are tests currently active for this project.
+
+
