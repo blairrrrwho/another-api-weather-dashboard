@@ -25,6 +25,41 @@ searchBtn.addEventListener("click", function (event) {
 
 })
 
+function createButtons () {
+    for (let index = 0; index < cityArray.length; index++) {
+        // const buttonNametextContent = cityArray[index];
+
+
+
+        
+    }
+}
+  //set to local storage and add the score to the array
+//   //if item does NOT exist
+//   if (!cityChoiceArray.includes(city)) {
+//     // add (push) into the array
+//     cityChoiceArray.push(city);
+//     // when sending to local system must stringify and then set it
+//     window.localStorage.setItem(
+//       'previousCities',
+//       JSON.stringify(cityChoiceArray)
+//     );
+//     // create the recent buttons
+//     for (let index = 0; index < cityChoiceArray.length; index++) {
+//       recentBtnEl.innerHTML += `
+//   <button class="bg-slate-300 hover:bg- text-black  py-1 my-2 mx-2 rounded">${cityChoiceArray[index]}</button>
+//   `;
+//     }
+//   } else {
+//     for (let index = 0; index < cityChoiceArray.length; index++) {
+//       let recentBtnEl = document.getElementById('recentBtn');
+
+//       recentBtnEl.innerHTML += `
+//   <button class="bg-slate-300 hover:bg- text-black  py-1 my-2 mx-2 rounded">${cityChoiceArray[index]}</button>
+//   `;
+//     }
+
+
 // create a function that uses a loop to create buttons using the city names from cityArray 
 // for each, document.createElement, .textContent, append
 // add event listener inside the same for each loop
@@ -106,7 +141,3 @@ searchBtn.addEventListener("click", function (event) {
 
         }
           
-        
-        
-    })
-      
