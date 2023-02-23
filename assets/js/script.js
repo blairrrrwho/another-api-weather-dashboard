@@ -8,6 +8,8 @@ const humidity = document.querySelector("#main-card-humidity");
 const date = document.querySelector(".date");
 let city = "";
 const searchList = document.querySelector("#results-div");
+// const historyBtn = document.querySelector("#historyBtn");
+// const recentBtn = document.querySelector("#recentBtn")
 
 
 // Main even that calls the big function that searches for the city and brings back the weather data
@@ -94,15 +96,15 @@ function getWeather(city) {
         })
 }
 
-let recentBtn = document.getElementById('results-div');
+let recentBtn = document.getElementById('recentBtn');
 recentBtn.addEventListener('click', (event) => choiceClicked(event));
 
 
-let historyBtn = document.getElementById('clearHistoryBtn');
+let historyBtn = document.getElementById('historyBtn');
 historyBtn.addEventListener('click', clearStorage);
 
 
-function getWeather(city, list) {
+function getWeather() {
     // Empty the recent buttons
     recentBtn.innerHTML = '';
     // Declare the local storage array
@@ -127,7 +129,7 @@ function getWeather(city, list) {
       }
     } else {
       for (let index = 0; index < cityChoiceArray.length; index++) {
-        let recentBtn = document.getElementById('results-div');
+        let recentBtn = document.getElementById('recentBtn');
   
         recentBtn.innerHTML += `
     <button class="bg-slate-300 hover:bg- text-black  py-1 my-2 mx-2 rounded">${cityChoiceArray[index]}</button>
@@ -138,12 +140,14 @@ function getWeather(city, list) {
     historyBtn.innerHTML = `
   <button class="bg-slate-400 hover:bg- text-black  py-1 my-2 mx-2 rounded">Clear Recent</button>
   `;
+}
 
   function clearStorage() {
     localStorage.clear();
     recentBtn.innerHTML = '';
     historyBtn.innerHTML = '';
-  }
+  };
+
 
 // function getLocalStorage() {
 //     localStorage.getItem("city")
