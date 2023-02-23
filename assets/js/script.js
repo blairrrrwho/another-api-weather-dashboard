@@ -8,6 +8,9 @@ const humidity = document.querySelector("#main-card-humidity");
 const date = document.querySelector(".date");
 let city = "";
 const searchList = document.querySelector("#results-div");
+var cityArray = JSON.parse(localStorage.getItem("city")) || [];
+
+
 
 
 
@@ -16,9 +19,15 @@ searchBtn.addEventListener("click", function (event) {
     event.preventDefault()
     let city = search.value
     getWeather(city);
-    localStorage.setItem("city", JSON.stringify(city));
+        console.log(city, cityArray);
+    cityArray.push(city);
+    localStorage.setItem("city", JSON.stringify(cityArray));
 
+})
 
+// create a function that uses a loop to create buttons using the city names from cityArray 
+// for each, document.createElement, .textContent, append
+// add event listener inside the same for each loop
 
 
     // Add event listener for the dynamically generated search history buttons
@@ -91,7 +100,13 @@ searchBtn.addEventListener("click", function (event) {
                             forecastHumidity.innerHTML = "Humidity: " + Math.floor(data.list[index].main.humidity) + `%`;
                             forecastCards[i].append(forecastHumidity)
                         }
+
                     })
             })
-    }
-})
+
+        }
+          
+        
+        
+    })
+      
