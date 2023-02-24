@@ -11,12 +11,15 @@ const date = document.querySelector(".date");
 const userSearch = document.querySelector("#user-input");
 // previousCityInput.innerHTML = cityInput.value;
 const newCityInput = document.getElementById('previousCityInput');
-
+ let cityArray = [];
 
 // Main even that calls the big function that searches for the city and brings back the weather data
 // const inputBar = document.getElementById("user-input");
 // inputBar.addEventListener('keypress', function (e) {
 //     if (e.key === "Enter")
+let searchBtn = document.getElementById('search-button');
+searchBtn.addEventListener('click', getUserCity);
+
 
 searchBtn.addEventListener("click", function (event) {
     event.preventDefault()
@@ -29,9 +32,6 @@ searchBtn.addEventListener("click", function (event) {
 })
 
 let getCurrentWeather = `${currentWeatherEndpt}${userSearch}'&appid='${apiKey} + &units=imperial`;
-
-let searchBtn = document.getElementById('searchBtn');
-searchBtn.addEventListener('click', getUserCity);
 
 let recentBtn = document.getElementById('recent-searches-btns');
 recentBtn.addEventListener('click', (event) => choiceClicked(event));
