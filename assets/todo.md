@@ -5,6 +5,37 @@
 - 
 
 # Open Weather API Calls: 
+API Key: 
+22a2a48d05ae9297e09f118308f99d21
+
+second one if the above doesn't work: 
+3bea8f75c0445fe6c784d909c15e7324
+
+
+{{{{{{
+Please use Geocoder API if you need automatic convert city names and zip-codes to geo coordinates and the other way around.
+
+Please note that API requests by city name, zip-codes and city id have been deprecated. Although they are still available for use, bug fixing and updates are no longer available for this functionality.
+
+Built-in API request by city name
+
+## Built-in API request by city name - Current Day 
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+
+## Built-in API request by city name - Five-Day Forecast
+api.openweathermap.org/data/2.5/forecast?q={city name}&appid={API key}
+
+}}}}}}
+
+
+
+Base URL: https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
+
+## Current Weather
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+
+same parameters as the 5-day
+
 
 ## 5 Day / 3 Hour API Call: 
 api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}

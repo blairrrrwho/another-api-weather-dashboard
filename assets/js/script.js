@@ -1,4 +1,7 @@
 const apiKey = "22a2a48d05ae9297e09f118308f99d21";
+const currentWeatherEndpt = 'https://api.openweathermap.org/data/2.5/weather?q=';
+const forecastWeatherEndpt = 'https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}';
+
 const mainCard = document.querySelector("#main-card-title");
 const temp = document.querySelector("#main-card-temp");
 const wind = document.querySelector("#main-card-wind");
@@ -55,7 +58,7 @@ function getCoordinates(search) {
         .then(function (data) {
             //pass the information into the next function
             // take all the data with you and THEN pull out what you need
-            getWeather(data[0]);
+            getWeatherAPI(data[0]);
         })
         .catch((error) => {
             console.log(error)
@@ -66,7 +69,7 @@ function getCoordinates(search) {
 searchBtn.addEventListener("click", function (event) {
     event.preventDefault()
     let city = userSearch.value
-    getWeather(city);
+    getWeatherAPI(city);
     console.log(city, cityArray);
     cityArray.push(city);
     localStorage.setItem("city", JSON.stringify(cityArray));
@@ -97,14 +100,20 @@ clearHistoryBtn.innerHTML = `
 `;
 
 
-// 1st API call is to get the weather data for the current day for the specified city 
-function getWeather(city) {
+// 1st API call is to get the CURRENT weather data for the CURRENT day for a specific city 
+// Added the parameters for unit:imperial so that the temperature would return back in farenheit andnot kelvin
+function getWeatherAPI(city) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=` + city + `&appid=` + apiKey + `&units=imperial`)
         .then((res) => {
             return res.json()
         })
         .then((data) => {
-            console.log(data)
+            console.log(data);
+            // Using the JavaScript DateConstructor instaed of moment.js or day.js
+            // The API brings back the current date as a day object (labeled dt in the API response data);
+            // Example: dt: 1610685149 is the formatting of the current date this API call gives us
+            // So we have to convert that to a string
+            //  ** see notes .md file to see how it came about; for now - it boils down to this:  var day = new Date(data.dt * 1000);
             const today = new Date(data.dt * 1000)
             const month = today.getMonth() + 1;
             date.innerHTML = "(" + month + "/" + today.getDate() + "/" + today.getFullYear() + ")"
@@ -120,7 +129,7 @@ function getWeather(city) {
             wind.innerHTML = "Wind: " + Math.floor(data.wind.speed) + " mph"
             humidity.innerHTML = " Humidity: " + Math.floor(data.main.humidity) + "%";
 
-            // The 2nd API call is to get the weather data for the next five days for the searched city 
+            // The 2nd API call is to get the weather FORECAST data for the next five days for a specific city 
             fetch(`https://api.openweathermap.org/data/2.5/forecast?q=` + city + `&appid=` + apiKey + `&units=imperial`)
                 .then((res) => {
                     return res.json()
