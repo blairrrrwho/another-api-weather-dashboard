@@ -20,10 +20,6 @@ searchBtn.addEventListener("click", function (event) {
     localStorage.setItem("city", JSON.stringify(city));
 
 
-
-
-    // Add event listener for the dynamically generated search history buttons
-
     // 1st API call is to get the weather data for the current day for the specified city 
     function getWeather(city) {
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=` + city + `&appid=` + apiKey + `&units=imperial`)
