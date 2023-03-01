@@ -20,24 +20,25 @@
         <div class="title text-white subtitle">
             <h1>Weather Dashboard</h1>
         </div>
-        
+
     </header>
 
-    <main class="container m-0 p-3">
+    <main class="">
         <div id="row p-2">
             <!-- Search Input and Search History / left sidebar -->
-            <section class="row col-12 col-lg-4 col-md-3">
-                <form class="m-2">
+            <section class="col-12 col-sm-5 col-md-4 col-lg-3 col-xlg-3 border: 1px;">
+                <form class="m-1">
                     <div class=">
-                        <label for="user-input">
-                            <h3 class="text-center">Search by City: </h3>
+                        <label for=" user-input">
+                        <h3 class="p-2">Search by City: </h3>
                         </label>
                         <input type="text" placeholder="Search City" class="form-control" id="user-input">
-                        <button type="submit" id = "search-button" class="btn btn-success mb-4 mt-2 d-grid gap-2 col-6 mx-auto">Search
+                        <button type="submit" id="search-button"
+                            class="btn btn-success mb-4 mt-2 d-grid col-6 mx-auto">Search
                         </button>
                     </div>
-                <!-- Search History -->
-                    <div class="pt-4"> 
+                    <!-- Search History -->
+                    <div class="pt-4">
                         <h4>Recent Searches: </h4>
                         <div class="row mb-4 mt-2 d-grid gap-2 col-6" id="results-div">
                             <!-- Search history buttons generated here -->
@@ -49,68 +50,72 @@
             </section>
 
             <!-- Card that displays the current weather and the five-day forecast -->
-            <section class="class = "col-12 col-sm-7 col-md-8 col-lg-8 col-xlg-7 order-md-2">
+            <section class="col 12 col-sm-9 col-md-8 col-lg-9"">
                 <!-- Current weather display -->
-                <div class="col-12 p-0">
+                <div class=" p-0">
                     <div class="d-flex">
-                        <h2 class="card-title" id="main-card-title"></h5>
+                        <h2 class="card-title" id="main-card-title">
+                            </h5>
                             <p class="date"></p>
-                        <ul>
-                            <li id="main-card-temp"></li>
-                            <li id="main-card-wind"></li>
-                            <li id="main-card-humidity"></li>
-                        </ul>
+                            <ul>
+                                <li id="main-card-temp"></li>
+                                <li id="main-card-wind"></li>
+                                <li id="main-card-humidity"></li>
+                            </ul>
                     </div>
                 </div>
+            </section>
 
-                <!-- Five-day forecast display -->
+            <section
+                <!-- Five-day forecast display  -->
                 <div>
                     <h2>Five-Day Forecast:</h2>
-                    <div class="p-4 d-flex flex-row mb-3 align-content-center justify-content-evenly flex-wrap container card bg-light">
+                    <div
+                        class="p-4 d-flex flex-row mb-3 align-content-center justify-content-evenly flex-wrap container card bg-light">
                         <!-- Card 1 -->
                         <section class="col-sm-10 col-md-4 offset-lg-1 col-lg-2 p-1">
                             <div class="card-body">
-                        
+
                             </div>
                         </section>
 
                         <!-- Card 2 -->
                         <section class="col-sm-10 col-md-4 offset-lg-1 col-lg-2 p-1">
                             <div class="card-body">
-                                
+
                             </div>
                         </section>
 
                         <!-- Card 3 -->
                         <section class="col-sm-10 col-md-4 offset-lg-1 col-lg-2 p-1">
                             <div class="card-body">
-                                
+
                             </div>
                         </section>
 
                         <!-- Card 4 -->
                         <section class="col-sm-10 col-md-4 offset-lg-1 col-lg-2 p-1">
                             <div class="card-body">
-                                
+
                             </div>
                         </section>
 
                         <!-- Card 5 -->
                         <section class="col-sm-10 col-md-4 offset-lg-1 col-lg-2 p-1">
                             <div class="card-body">
-                                
+
                             </div>
                         </section>
                     </div>
                 </div>
-            </section>   
+            </section>
 
         </div>
     </main>
-    
+
     <footer>
         <p class="footer text-center p-2">
-          2023 Weather Dashboard, Made with the Open Weather API
+            2023 Weather Dashboard, Made with the Open Weather API
         </p>
     </footer>
 
@@ -118,4 +123,5 @@
     <!-- <script src="https://code.jquery.com/jquery-3.6.3.js"></script> -->
     <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
+
 </html>

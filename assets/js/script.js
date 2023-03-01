@@ -118,7 +118,7 @@ searchBtn.addEventListener("click", function (event) {
         // Create the recent buttons
         for (let index = 0; index < cityChoiceArray.length; index++) {
             recentBtn.innerHTML += `
-    <button class="bg-slate-300 hover:bg- text-black  py-1 my-2 mx-2 rounded">${cityChoiceArray[index]}</button>
+    <button class="d-grid pb-5 btn btn-outline-warning">${cityChoiceArray[index]}</button>
     `;
         }
     } else {
@@ -126,13 +126,13 @@ searchBtn.addEventListener("click", function (event) {
             let recentBtn = document.getElementById('recentBtn');
 
             recentBtn.innerHTML += `
-    <button class="bg-slate-300 hover:bg- text-black  py-1 my-2 mx-2 rounded">${cityChoiceArray[index]}</button>
+    <button class="d-grid pt-4 pb-5 btn btn-outline-warning">${cityChoiceArray[index]}</button>
     `;
         }
     }
     // Create a clear history buttton - that clears the local storage/history
     historyBtn.innerHTML = `
-  <button class="bg-slate-400 hover:bg- text-black  py-1 my-2 mx-2 rounded">Clear Recent</button>
+  <button class="d-grid pt-4 pb-5 btn btn-outline-secondary">Clear Recent</button>
   `;
 
 

@@ -1,4 +1,5 @@
-# Weather Dashboard API Application
+# Another API Weather Dashboard
+
 User Story
 AS A traveler
 I WANT to see the weather outlook for multiple cities
@@ -21,7 +22,7 @@ It's an easy and simple to use tool that can be used to look up the most up to d
 
 Using Bootstrap framework, Jquery, and the Open weather API the user can search for a city and get the current and future weather conditions which include the respective date(s), temperature, humidity, wind speed and UVIndex for each city. The forecast will also display corresponding weather icons. Local storage will store data for previously search cities and add them to a list which can be clicked to reload city search.
 
-## Table of Contents (Optional)
+## Table of Contents
 
 - [Description](#description)
 - [Installation](#installation)
@@ -31,7 +32,6 @@ Using Bootstrap framework, Jquery, and the Open weather API the user can search 
 - [Credits](#credits)
 - [License](#license)
 - [Tests](#tests)
-
 
 
 ## Installation
@@ -69,11 +69,7 @@ Geological Api: https://openweathermap.org/
 OpenWeather API Website: https://openweathermap.org/forecast5
 Bootstrap: https://getbootstrap.com/docs/5.2/getting-started/introduction/
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+I'd like to thank my classmates and Jacob Nordan. 
 
 ## License
 
