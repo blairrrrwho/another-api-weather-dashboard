@@ -2,7 +2,8 @@
 - have the page preload to something so it's not blank
 - UV index??
 - style the shit out of it 
-- 
+- i think everything is technically working.......... but we want media queries and everything right in there
+- check and make sure the api calls are not the outdated ones 
 
 # Open Weather API Calls: 
 API Key: 
