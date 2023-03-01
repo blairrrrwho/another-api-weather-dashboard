@@ -13,7 +13,7 @@ second one if the above doesn't work:
 3bea8f75c0445fe6c784d909c15e7324
 
 
-{{{{{{
+<!-- {{{{{{ -->
 Please use Geocoder API if you need automatic convert city names and zip-codes to geo coordinates and the other way around.
 
 Please note that API requests by city name, zip-codes and city id have been deprecated. Although they are still available for use, bug fixing and updates are no longer available for this functionality.
@@ -26,7 +26,7 @@ https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 ## Built-in API request by city name - Five-Day Forecast
 api.openweathermap.org/data/2.5/forecast?q={city name}&appid={API key}
 
-}}}}}}
+<!-- }}}}}} -->
 
 
 
