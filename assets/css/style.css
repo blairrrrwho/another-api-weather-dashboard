@@ -8,10 +8,6 @@ li {
 list-style-type: none;
 }
 
-/* .navbar {
-    background: linear-gradient(to right, #0059ff, #000066);
-} */
-
 .form-control {
     cursor:pointer;
 }
