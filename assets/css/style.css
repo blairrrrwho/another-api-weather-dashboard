@@ -8,13 +8,32 @@ li {
 list-style-type: none;
 }
 
-/* .footer {
-    position: absolute;
-    bottom: 0;
-    right:0;
-    left:0;
+/* .navbar {
+    background: linear-gradient(to right, #0059ff, #000066);
+} */
+
+.form-control {
+    cursor:pointer;
+}
+.navbar-brand {
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
 }
 
-#recentBtn {
-    
-} */
+.search-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.city-name {
+    font-size: 30px;
+}
+
+.forecast-date {
+    font-size: 18px;
+}
+
+.col-12 {
+    font-weight: bold;
+}
